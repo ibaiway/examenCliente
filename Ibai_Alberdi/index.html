@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ibai Alberdi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="principal">
+        <div class="titulo">
+          <h2>Nuevo Libro</h2>
+          <i class="sprite sprite-libro"></i>
+        </div>
+        <form id="crear" name="crear" action="#" method="post">
+          <label for="titulo">Título:</label>
+          <input class="input-largo" type="text" name="titulo" value=""></br>
+          <label for="autor">Autor:</label>
+          <input class="input-largo" type="text" name="autor" value=""></br>
+          <label for="isbn">ISBN:</label>
+          <input class="input-largo" type="number" name="isbn" value=""></br>
+          <label for="generos">Géneros:</label></br>
+          <div class="" id="checkbox">
+            <div class="opcion">
+              <input type="checkbox" name="generos" value="policiaca"> Policíaca
+            </div>
+            <div class="opcion">
+              <input type="checkbox" name="generos" value="historica"> Histórica
+            </div>
+            <div class="opcion">
+              <input type="checkbox" name="generos ficcion" value="cienciaficcion"> Ciencia Ficción
+            </div>
+            <div class="opcion">
+              <input type="checkbox" name="generos" value="fantasia"> Fantástica
+            </div>
+            <div class="opcion">
+              <input type="checkbox" name="generos" value="romantica"> Romántica
+            </div>
+          </div>
+            <input class="button-bonito" type="button" id="crearBoton" name="" value="Añadir">
+        </form>
+      </div>
+      <div class="principal">
+        <div class="titulo">
+          <h2>Consultar Datos</h2>
+          <i class="sprite sprite-lupa"></i>
+        </div>
+        <form class="" name="consulta" id="consulta" action="index.html" method="post">
+          <label for="titulo">Título:</label>
+          <input class="input-largo" type="text" readonly name="titulo" value=""></br>
+          <label for="autor">Autor:</label>
+          <input type="text" name="autor" readonly value="">
+          <label for="isbn">ISBN:</label>
+          <input type="number" name="isbn" readonly value=""></br>
+          <label for="isbn">Géneros:</label>
+          <div id="listaGeneros" class="generos">
+
+          </div>
+          <label for="isbn">Prestado a:</label>
+          <input class="input-largo" type="text" name="prestado" value="">
+          <input class="button-bonito" type="button" id="prestarBoton" name="" value="Prestar">
+          <input class="button-bonito" type="button" id="devolverBoton" name="" value="Devolver">
+        </form>
+      </div>
+      <div class="principal">
+        <div class="titulo">
+          <h2>Disponibles</h2>
+          <i class="sprite sprite-arroba"></i>
+        </div>
+        <div id="listaDisponibles" class="disponibles">
+          <p class="libro">
+            El señor de los anillos
+          </p>
+          <p class="libro creado">
+            Chacal (creado)
+          </p>
+          <p class="libro devuelto">
+            Philip Marlowe (devuelto)
+          </p>
+          <p class="libro seleccionado">
+            El cementerio de Praga (selecionado)
+          </p>
+          <p class="libro">
+            La princesa prometida
+          </p>
+        </div>
+      </div>
+      <div class="principal">
+        <div class="titulo">
+          <h2>Préstamos</h2>
+          <i class="sprite sprite-flecha"></i>
+        </div>
+        <div id="listaPrestamos" class="prestamos">
+          <p class="libro prestado">
+            El aprendiz de guerrero (prestado)
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
